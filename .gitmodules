@@ -1,0 +1,3 @@
+[submodule "gitextensions"]
+	path = gitextensions
+	url = https://github.com/spdr870/gitextensions
