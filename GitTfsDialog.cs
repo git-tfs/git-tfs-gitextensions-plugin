@@ -82,6 +82,7 @@ namespace GitTfs.GitExtensions.Plugin
                 _settings.PullSetting = PullSetting.Fetch;
                 _commands.StartGitTfsCommandProcessDialog("fetch", TfsRemoteComboBox.Text);
             }
+            this.Close();
         }
 
         private void InitializePush()
@@ -129,6 +130,7 @@ namespace GitTfs.GitExtensions.Plugin
                 _settings.PushSetting = PushSetting.RCheckin;
                 _commands.StartGitTfsCommandProcessDialog("rcheckin");
             }
+            this.Close();
         }
 
         private void TfsRemoteComboBoxSelectedIndexChanged(object sender, EventArgs e)
