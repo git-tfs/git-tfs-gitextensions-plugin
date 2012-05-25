@@ -31,7 +31,7 @@ namespace GitTfs.GitExtensions.Plugin
         {
             if (string.IsNullOrEmpty(gitUiCommands.GitWorkingDir))
             {
-                return false;
+                return true;
             }
 
             var remotes = GetTfsRemotes(gitUiCommands.GitUICommands);
@@ -39,13 +39,11 @@ namespace GitTfs.GitExtensions.Plugin
             if (remotes.Any())
             {
                 new GitTfsDialog(gitUiCommands.GitUICommands, PluginSettings, remotes).ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("The active repository has no TFS remotes.", "git-tfs Error",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
 
+            MessageBox.Show("The active repository has no TFS remotes.", "git-tfs Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
             return true;
         }
 

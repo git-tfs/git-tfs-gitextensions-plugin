@@ -82,7 +82,6 @@ namespace GitTfs.GitExtensions.Plugin
                 _settings.PullSetting = PullSetting.Fetch;
                 _commands.StartGitTfsCommandProcessDialog("fetch", TfsRemoteComboBox.Text);
             }
-            this.Close();
         }
 
         private void InitializePush()
