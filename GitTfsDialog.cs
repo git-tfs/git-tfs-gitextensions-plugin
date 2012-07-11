@@ -74,13 +74,13 @@ namespace GitTfs.GitExtensions.Plugin
             else if (RebaseRadioButton.Checked)
             {
                 _settings.PullSetting = PullSetting.Rebase;
-                _commands.StartGitTfsCommandProcessDialog("fetch", TfsRemoteComboBox.Text);
+                _commands.StartGitTfsCommandProcessDialog("fetch", "--remote " + TfsRemoteComboBox.Text);
                 _commands.StartRebaseDialog("tfs/" + TfsRemoteComboBox.Text);
             }
             else if (FetchRadioButton.Checked)
             {
                 _settings.PullSetting = PullSetting.Fetch;
-                _commands.StartGitTfsCommandProcessDialog("fetch", TfsRemoteComboBox.Text);
+                _commands.StartGitTfsCommandProcessDialog("fetch", "--remote " + TfsRemoteComboBox.Text);
             }
         }
 
