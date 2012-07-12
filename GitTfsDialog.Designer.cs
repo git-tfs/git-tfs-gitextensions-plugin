@@ -238,6 +238,7 @@
             this.RCheckinRadioButton.TabStop = true;
             this.RCheckinRadioButton.Text = "Recursively Checkin changes to TFS";
             this.RCheckinRadioButton.UseVisualStyleBackColor = true;
+            this.RCheckinRadioButton.CheckedChanged += new System.EventHandler(this.PushOptionCheckedChanged);
             // 
             // ShelveRadioButton
             // 
