@@ -160,9 +160,9 @@
             this.FetchRadioButton.AutoSize = true;
             this.FetchRadioButton.Location = new System.Drawing.Point(7, 66);
             this.FetchRadioButton.Name = "FetchRadioButton";
-            this.FetchRadioButton.Size = new System.Drawing.Size(235, 17);
+            this.FetchRadioButton.Size = new System.Drawing.Size(196, 17);
             this.FetchRadioButton.TabIndex = 2;
-            this.FetchRadioButton.Text = "Do not merge, only fetch remote TFS branch";
+            this.FetchRadioButton.Text = "Fetch: fetch from tfs without merging";
             this.FetchRadioButton.UseVisualStyleBackColor = true;
             this.FetchRadioButton.CheckedChanged += new System.EventHandler(this.MergeOptionCheckedChanged);
             // 
@@ -171,9 +171,9 @@
             this.RebaseRadioButton.AutoSize = true;
             this.RebaseRadioButton.Location = new System.Drawing.Point(7, 44);
             this.RebaseRadioButton.Name = "RebaseRadioButton";
-            this.RebaseRadioButton.Size = new System.Drawing.Size(240, 17);
+            this.RebaseRadioButton.Size = new System.Drawing.Size(223, 17);
             this.RebaseRadioButton.TabIndex = 1;
-            this.RebaseRadioButton.Text = "Rebase remote TFS branch to current branch";
+            this.RebaseRadioButton.Text = "Rebase: fetch then rebase current branch";
             this.RebaseRadioButton.UseVisualStyleBackColor = true;
             this.RebaseRadioButton.CheckedChanged += new System.EventHandler(this.MergeOptionCheckedChanged);
             // 
@@ -182,9 +182,9 @@
             this.PullRadioButton.AutoSize = true;
             this.PullRadioButton.Location = new System.Drawing.Point(7, 20);
             this.PullRadioButton.Name = "PullRadioButton";
-            this.PullRadioButton.Size = new System.Drawing.Size(233, 17);
+            this.PullRadioButton.Size = new System.Drawing.Size(209, 17);
             this.PullRadioButton.TabIndex = 0;
-            this.PullRadioButton.Text = "Merge remote TFS branch to current branch";
+            this.PullRadioButton.Text = "Pull: fetch and merge to current branch";
             this.PullRadioButton.UseVisualStyleBackColor = true;
             this.PullRadioButton.CheckedChanged += new System.EventHandler(this.MergeOptionCheckedChanged);
             // 
