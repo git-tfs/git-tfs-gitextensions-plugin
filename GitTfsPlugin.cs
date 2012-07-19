@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using GitUIPluginInterfaces;
@@ -50,9 +48,9 @@ namespace GitTfs.GitExtensions.Plugin
         private static IEnumerable<string> GetTfsRemotes(IGitUICommands commands)
         {
             var result = commands.GitCommand("config --get-regexp tfs-remote");
-            var match = Regex.Match(result, @"tfs-remote\.([^\.]+)");
-            return match.Success
-                       ? match.Groups.Cast<Group>().Skip(1).Select(g => g.Value)
+            var matches = Regex.Matches(result, @"tfs-remote\.([^\.]+)");
+            return matches.Count > 0
+                       ? matches.Cast<Match>().Select(g => g.Groups[1].Value).Distinct()
                        : Enumerable.Empty<string>();
         }
 

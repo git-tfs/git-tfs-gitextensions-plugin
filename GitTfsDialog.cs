@@ -66,7 +66,7 @@ namespace GitTfs.GitExtensions.Plugin
             if (PullRadioButton.Checked)
             {
                 _settings.PullSetting = PullSetting.Pull;
-                if (!_commands.StartGitTfsCommandProcessDialog("pull"))
+                if (!_commands.StartGitTfsCommandProcessDialog("pull", "--remote " + TfsRemoteComboBox.Text))
                 {
                     _commands.StartResolveConflictsDialog();
                 }
@@ -117,7 +117,7 @@ namespace GitTfs.GitExtensions.Plugin
             if (CheckinRadioButton.Checked)
             {
                 _settings.PushSetting = PushSetting.Checkin;
-                _commands.StartGitTfsCommandProcessDialog("checkintool");
+                _commands.StartGitTfsCommandProcessDialog("checkintool", "--remote " + TfsRemoteComboBox.Text);
             }
             else if (ShelveRadioButton.Checked)
             {
@@ -127,7 +127,7 @@ namespace GitTfs.GitExtensions.Plugin
             else if (RCheckinRadioButton.Checked)
             {
                 _settings.PushSetting = PushSetting.RCheckin;
-                _commands.StartGitTfsCommandProcessDialog("rcheckin");
+                _commands.StartGitTfsCommandProcessDialog("rcheckin", "--remote " + TfsRemoteComboBox.Text);
             }
             this.Close();
         }
