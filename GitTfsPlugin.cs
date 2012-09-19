@@ -27,7 +27,7 @@ namespace GitTfs.GitExtensions.Plugin
 
         public bool Execute(GitUIBaseEventArgs gitUiCommands)
         {
-            if (string.IsNullOrEmpty(gitUiCommands.GitWorkingDir))
+            if (string.IsNullOrEmpty(gitUiCommands.GitModule.GitWorkingDir))
             {
                 return true;
             }
