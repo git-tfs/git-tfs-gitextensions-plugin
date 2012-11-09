@@ -25,6 +25,10 @@ namespace GitTfs.GitExtensions.Plugin
 
         }
 
+        public void Unregister(IGitUICommands gitUiCommands)
+        {
+        }
+
         public bool Execute(GitUIBaseEventArgs gitUiCommands)
         {
             if (string.IsNullOrEmpty(gitUiCommands.GitModule.GitWorkingDir))
