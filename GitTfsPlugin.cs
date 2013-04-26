@@ -52,7 +52,7 @@ namespace GitTfs.GitExtensions.Plugin
         private static IEnumerable<string> GetTfsRemotes(IGitUICommands commands)
         {
             var result = commands.GitCommand("config --get-regexp tfs-remote");
-            var matches = Regex.Matches(result, @"tfs-remote\.(.+)\.repository");
+            var matches = Regex.Matches(result, @"tfs-remote\.(.+)\.repository ");
             return matches.Count > 0
                        ? matches.Cast<Match>().Select(g => g.Groups[1].Value).Distinct()
                        : Enumerable.Empty<string>();
