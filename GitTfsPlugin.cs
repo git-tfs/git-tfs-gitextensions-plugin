@@ -9,6 +9,11 @@ namespace GitTfs.GitExtensions.Plugin
 {
     public class GitTfsPlugin : IGitPlugin
     {
+        public IEnumerable<ISetting> GetSettings()
+        {
+            return new List<ISetting>();
+        }
+
         public void Register(IGitUICommands gitUiCommands)
         {
             var existingKeys = Settings.GetAvailableSettings();
@@ -22,7 +27,6 @@ namespace GitTfs.GitExtensions.Plugin
             {
                 Settings.AddSetting(settingToAdd, string.Empty);
             }
-
         }
 
         public void Unregister(IGitUICommands gitUiCommands)
@@ -31,7 +35,7 @@ namespace GitTfs.GitExtensions.Plugin
 
         public bool Execute(GitUIBaseEventArgs gitUiCommands)
         {
-            if (string.IsNullOrEmpty(gitUiCommands.GitModule.GitWorkingDir))
+            if (string.IsNullOrEmpty(gitUiCommands.GitModule.WorkingDir))
             {
                 return true;
             }
@@ -62,6 +66,8 @@ namespace GitTfs.GitExtensions.Plugin
         {
             get { return "git-tfs"; }
         }
+
+        ISettingsSource IGitPlugin.Settings { get; set; }
 
         public IGitPluginSettingsContainer Settings { get; set; }
 
