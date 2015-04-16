@@ -6,17 +6,17 @@ namespace GitTfs.GitExtensions.Plugin
 {
     public class SettingsContainer
     {
-        private readonly IGitPluginSettingsContainer _container;
+        private readonly ISettingsSource _container;
 
-        public SettingsContainer(IGitPluginSettingsContainer container)
+        public SettingsContainer(ISettingsSource container)
         {
             _container = container;
         }
 
         public string TfsRemote
         {
-            get { return _container.GetSetting(SettingKeys.TfsRemote); }
-            set { _container.SetSetting(SettingKeys.TfsRemote, value); }
+            get { return _container.GetValue(SettingKeys.TfsRemote, null , x => x); }
+            set { _container.SetValue(SettingKeys.TfsRemote, value, x => x); }
         }
 
         public PullSetting? PullSetting
@@ -40,17 +40,15 @@ namespace GitTfs.GitExtensions.Plugin
             where T : struct
         {
             var type = typeof (T);
-            var value = _container.GetSetting(key);
-
-            return (from name in Enum.GetNames(type)
-                    where name == value
-                    select (T?) Enum.Parse(type, name)).FirstOrDefault();
+            return _container.GetValue(key, default(T), x => (from name in Enum.GetNames(type)
+                                                                   where name == x
+                                                                   select (T?) Enum.Parse(type, name)).FirstOrDefault());
         }
 
         private void SetEnumSettingValue<T>(string key, T? value)
             where T : struct
         {
-            _container.SetSetting(key, value.HasValue ? value.ToString() : string.Empty);
+            _container.SetValue(key, value, x => x.HasValue ? x.ToString() : string.Empty);
         }
     }
 }
