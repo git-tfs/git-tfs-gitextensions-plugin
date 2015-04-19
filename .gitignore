@@ -3,3 +3,4 @@ _ReSharper.GitTfs.GitExtensions.Plugin
 *.user
 *.suo
 [Oo]bj
+/packages

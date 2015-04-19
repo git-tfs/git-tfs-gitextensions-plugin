@@ -4,17 +4,17 @@ namespace GitTfs.GitExtensions.Plugin
 {
     public class ShelveSettingsContainer
     {
-        private readonly IGitPluginSettingsContainer _container;
+        private readonly ISettingsSource _container;
 
-        public ShelveSettingsContainer(IGitPluginSettingsContainer container)
+        public ShelveSettingsContainer(ISettingsSource container)
         {
             _container = container;
         }
 
         public string Name
         {
-            get { return _container.GetSetting(SettingKeys.ShelvesetName); }
-            set { _container.SetSetting(SettingKeys.ShelvesetName, value); }
+            get { return _container.GetValue(SettingKeys.ShelvesetName, string.Empty, x => x); }
+            set { _container.SetValue(SettingKeys.ShelvesetName, value, x => x); }
         }
 
         public bool Overwrite
@@ -26,7 +26,7 @@ namespace GitTfs.GitExtensions.Plugin
             }
             set
             {
-                _container.SetSetting(SettingKeys.OverwriteShelveset, value.ToString());
+                _container.SetValue(SettingKeys.OverwriteShelveset, value, x => x.ToString());
             }
         }
     }
