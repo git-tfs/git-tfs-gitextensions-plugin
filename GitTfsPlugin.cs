@@ -31,7 +31,7 @@ namespace GitTfs.GitExtensions.Plugin
                 return true;
             }
 
-            MessageBox.Show("The active repository has no TFS remotes.", "git-tfs Error",
+            MessageBox.Show("The active repository has no TFS remotes.", "Git-TFS Error",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
             return false;
         }
