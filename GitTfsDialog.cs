@@ -1,8 +1,8 @@
-﻿using System;
+﻿using GitUIPluginInterfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using GitUIPluginInterfaces;
 
 namespace GitTfs.GitExtensions.Plugin
 {

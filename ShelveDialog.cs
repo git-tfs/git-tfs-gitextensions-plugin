@@ -1,6 +1,6 @@
-﻿using System;
+﻿using GitUIPluginInterfaces;
+using System;
 using System.Windows.Forms;
-using GitUIPluginInterfaces;
 
 namespace GitTfs.GitExtensions.Plugin
 {

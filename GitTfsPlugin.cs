@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using GitUIPluginInterfaces;
+using ResourceManager;
+using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using GitUIPluginInterfaces;
-using ResourceManager;
 
 namespace GitTfs.GitExtensions.Plugin
 {
