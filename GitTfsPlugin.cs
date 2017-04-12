@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using GitUIPluginInterfaces;
+using ResourceManager;
 
 namespace GitTfs.GitExtensions.Plugin
 {
