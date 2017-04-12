@@ -45,9 +45,11 @@
             this.RCheckinRadioButton = new System.Windows.Forms.RadioButton();
             this.ShelveRadioButton = new System.Windows.Forms.RadioButton();
             this.CheckinRadioButton = new System.Windows.Forms.RadioButton();
+            ((System.ComponentModel.ISupportInitialize)(this.Container)).BeginInit();
             this.Container.Panel1.SuspendLayout();
             this.Container.Panel2.SuspendLayout();
             this.Container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TopContainer)).BeginInit();
             this.TopContainer.Panel1.SuspendLayout();
             this.TopContainer.Panel2.SuspendLayout();
             this.TopContainer.SuspendLayout();
@@ -277,10 +279,12 @@
             this.Text = "Git-TFS";
             this.Container.Panel1.ResumeLayout(false);
             this.Container.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Container)).EndInit();
             this.Container.ResumeLayout(false);
             this.TopContainer.Panel1.ResumeLayout(false);
             this.TopContainer.Panel1.PerformLayout();
             this.TopContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TopContainer)).EndInit();
             this.TopContainer.ResumeLayout(false);
             this.PullGroupBox.ResumeLayout(false);
             this.MergeOptionsGroupBox.ResumeLayout(false);
