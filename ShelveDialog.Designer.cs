@@ -100,7 +100,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ShelveDialog";
-            this.Text = "Git-Tfs Shelve";
+            this.Text = "Git-TFS Shelve";
             this.ResumeLayout(false);
             this.PerformLayout();
 

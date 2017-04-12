@@ -13,7 +13,7 @@ namespace GitTfs.GitExtensions.Plugin
 
         public GitTfsPlugin()
         {
-            SetNameAndDescription("Git-Tfs");
+            SetNameAndDescription("Git-TFS");
             Translate();
         }
 

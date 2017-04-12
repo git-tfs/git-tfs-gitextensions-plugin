@@ -274,7 +274,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GitTfsDialog";
-            this.Text = "git-tfs";
+            this.Text = "Git-TFS";
             this.Container.Panel1.ResumeLayout(false);
             this.Container.Panel2.ResumeLayout(false);
             this.Container.ResumeLayout(false);
