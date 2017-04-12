@@ -8,8 +8,15 @@ using ResourceManager;
 
 namespace GitTfs.GitExtensions.Plugin
 {
-    public class GitTfsPlugin : GitPluginBase
+    public class GitTfsPlugin : GitPluginBase, IGitPluginForRepository
     {
+
+        public GitTfsPlugin()
+        {
+            SetNameAndDescription("Git-Tfs");
+            Translate();
+        }
+
         public override bool Execute(GitUIBaseEventArgs gitUiCommands)
         {
             if (string.IsNullOrEmpty(gitUiCommands.GitModule.WorkingDir))
@@ -37,11 +44,6 @@ namespace GitTfs.GitExtensions.Plugin
             return matches.Count > 0
                        ? matches.Cast<Match>().Select(g => g.Groups[1].Value).Distinct()
                        : Enumerable.Empty<string>();
-        }
-
-        public override string Description
-        {
-            get { return "Git-Tfs"; }
         }
 
         public SettingsContainer PluginSettings
