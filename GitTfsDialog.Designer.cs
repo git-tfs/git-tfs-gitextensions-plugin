@@ -162,7 +162,7 @@
             this.FetchRadioButton.AutoSize = true;
             this.FetchRadioButton.Location = new System.Drawing.Point(7, 66);
             this.FetchRadioButton.Name = "FetchRadioButton";
-            this.FetchRadioButton.Size = new System.Drawing.Size(196, 17);
+            this.FetchRadioButton.Size = new System.Drawing.Size(205, 17);
             this.FetchRadioButton.TabIndex = 2;
             this.FetchRadioButton.Text = "Fetch: fetch from TFS without merging";
             this.FetchRadioButton.UseVisualStyleBackColor = true;
