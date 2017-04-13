@@ -102,6 +102,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ShelveDialog";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Git-TFS Shelve";
             this.ResumeLayout(false);
             this.PerformLayout();

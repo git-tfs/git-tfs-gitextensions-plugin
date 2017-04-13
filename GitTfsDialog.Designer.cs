@@ -277,6 +277,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GitTfsDialog";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Git-TFS";
             this.SplitContainer.Panel1.ResumeLayout(false);
             this.SplitContainer.Panel2.ResumeLayout(false);
