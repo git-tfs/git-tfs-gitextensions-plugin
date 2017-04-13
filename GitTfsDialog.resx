@@ -112,37 +112,15 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PushButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCAAA
-        CwgBwL2l2gAAAQpJREFUOE9j+P//PwMlGK6ZAQ2Yz7s+DYj/g2h0OWQLsRoA03wTqBKbIXgNgGne/fP/
-        //nv/v8H0eiG4DQApnnbt///Jzz//7/9MYQG8ZENwWoATPPGj///d9z//7/uNgKD+CBxmCG4DPh/+hfQ
-        2UAbG4CeL72CwCA+SBwkDzIEqwFGU07Oh9rwv+/W///ZpxEYxIfJgdThCgNuYHQpgRROBGpIOvwPjkF8
-        kDhIHoi5CcXC/y6g8yN2fYdjEB9qADhJEDSg+eyf//6bP8IxiE+SAbUnv/93W/MajkF8kgxYCPRzxZGv
-        cAziE22Aft+hJbAQR6ZB4rA8QSgvgGMDiHWRMDj08RpAbpYGAOPSWF0vy2YFAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="PullButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCAAA
-        CwgBwL2l2gAAAQpJREFUOE9j+P//PwMlGK6ZAQrM512fBsT/seBpMDXIFmIz4P8FoIptPxEYxAcZSLQB
-        m7/9/9/3AoFBfJIMWPvp///2xwgM4pNkwPI3///X3UZgEJ8kA+Y///+/9AoCg/gEDUAO/b5b//9nn0Zg
-        EB8pVqZhjQWQgoMf//+fCFScd/L//6TD/+AYxAeJg+RB6rAaYDTl5HyQ5DSgwtSDv/5H7PoOxyA+SBwk
-        D1KHKx1wazVvXQtSNOHq//8xO7/899/8EUyD+CBxkDwwLXDjS0hwQ7ou/P6fuOvjfxCNrBmUmPCmRJAN
-        MJesf4RqM1EpEaoIbgjM2TDNxLgAppYbyBADuQhZM04DyM3SANNLWL4PTDUqAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAUAgIAAAAEAIAAoCAEAVgAAAEBAAAABACAAKEIAAH4IAQAgIAAAAQAgAKgQAACmSgEAGBgAAAEA

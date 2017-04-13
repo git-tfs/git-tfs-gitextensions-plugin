@@ -65,7 +65,7 @@
             // 
             // ShelveButton
             // 
-            this.ShelveButton.Image = ((System.Drawing.Image)(resources.GetObject("ShelveButton.Image")));
+            this.ShelveButton.Image = global::GitTfs.GitExtensions.Plugin.Properties.Resources.push;
             this.ShelveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ShelveButton.Location = new System.Drawing.Point(15, 65);
             this.ShelveButton.Name = "ShelveButton";

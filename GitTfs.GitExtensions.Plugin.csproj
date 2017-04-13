@@ -87,6 +87,15 @@
       <Name>ResourceManager</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\pull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\cow-head.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

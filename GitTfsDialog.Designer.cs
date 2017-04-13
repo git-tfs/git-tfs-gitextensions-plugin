@@ -63,7 +63,7 @@
             // 
             this.PushButton.Enabled = false;
             this.PushButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PushButton.Image = ((System.Drawing.Image)(resources.GetObject("PushButton.Image")));
+            this.PushButton.Image = global::GitTfs.GitExtensions.Plugin.Properties.Resources.push;
             this.PushButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PushButton.Location = new System.Drawing.Point(6, 121);
             this.PushButton.Name = "PushButton";
@@ -194,7 +194,7 @@
             // 
             this.PullButton.Enabled = false;
             this.PullButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PullButton.Image = ((System.Drawing.Image)(resources.GetObject("PullButton.Image")));
+            this.PullButton.Image = global::GitTfs.GitExtensions.Plugin.Properties.Resources.pull;
             this.PullButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PullButton.Location = new System.Drawing.Point(6, 118);
             this.PullButton.Name = "PullButton";
