@@ -19,6 +19,15 @@ namespace GitTfs.GitExtensions.Plugin
             InitializeComponent();
             TfsRemoteComboBox.DataSource = tfsRemotes.ToList();
             InitializeFromSettings();
+
+            this.KeyDown += (o, e) =>
+            {
+                if (e.KeyCode == Keys.Escape)
+                {
+                    this.DialogResult = DialogResult.Cancel;
+                    this.Close();
+                }
+            };
         }
 
         private void InitializeFromSettings()
