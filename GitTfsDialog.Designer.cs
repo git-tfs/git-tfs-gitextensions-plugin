@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GitTfsDialog));
             this.PushButton = new System.Windows.Forms.Button();
-            this.Container = new System.Windows.Forms.SplitContainer();
+            this.SplitContainer = new System.Windows.Forms.SplitContainer();
             this.TopContainer = new System.Windows.Forms.SplitContainer();
             this.TfsRemoteComboBox = new System.Windows.Forms.ComboBox();
             this.TfsRemoteLabel = new System.Windows.Forms.Label();
@@ -45,10 +45,10 @@
             this.RCheckinRadioButton = new System.Windows.Forms.RadioButton();
             this.ShelveRadioButton = new System.Windows.Forms.RadioButton();
             this.CheckinRadioButton = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.Container)).BeginInit();
-            this.Container.Panel1.SuspendLayout();
-            this.Container.Panel2.SuspendLayout();
-            this.Container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SplitContainer)).BeginInit();
+            this.SplitContainer.Panel1.SuspendLayout();
+            this.SplitContainer.Panel2.SuspendLayout();
+            this.SplitContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TopContainer)).BeginInit();
             this.TopContainer.Panel1.SuspendLayout();
             this.TopContainer.Panel2.SuspendLayout();
@@ -73,24 +73,24 @@
             this.PushButton.UseVisualStyleBackColor = true;
             this.PushButton.Click += new System.EventHandler(this.PushButtonClick);
             // 
-            // Container
+            // SplitContainer
             // 
-            this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Container.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.Container.Location = new System.Drawing.Point(0, 0);
-            this.Container.Name = "Container";
-            this.Container.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.SplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SplitContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.SplitContainer.Location = new System.Drawing.Point(0, 0);
+            this.SplitContainer.Name = "SplitContainer";
+            this.SplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // Container.Panel1
+            // SplitContainer.Panel1
             // 
-            this.Container.Panel1.Controls.Add(this.TopContainer);
+            this.SplitContainer.Panel1.Controls.Add(this.TopContainer);
             // 
-            // Container.Panel2
+            // SplitContainer.Panel2
             // 
-            this.Container.Panel2.Controls.Add(this.PushGroupBox);
-            this.Container.Size = new System.Drawing.Size(269, 346);
-            this.Container.SplitterDistance = 186;
-            this.Container.TabIndex = 2;
+            this.SplitContainer.Panel2.Controls.Add(this.PushGroupBox);
+            this.SplitContainer.Size = new System.Drawing.Size(269, 346);
+            this.SplitContainer.SplitterDistance = 186;
+            this.SplitContainer.TabIndex = 2;
             // 
             // TopContainer
             // 
@@ -271,17 +271,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(269, 346);
-            this.Controls.Add(this.Container);
+            this.Controls.Add(this.SplitContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GitTfsDialog";
             this.Text = "Git-TFS";
-            this.Container.Panel1.ResumeLayout(false);
-            this.Container.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Container)).EndInit();
-            this.Container.ResumeLayout(false);
+            this.SplitContainer.Panel1.ResumeLayout(false);
+            this.SplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SplitContainer)).EndInit();
+            this.SplitContainer.ResumeLayout(false);
             this.TopContainer.Panel1.ResumeLayout(false);
             this.TopContainer.Panel1.PerformLayout();
             this.TopContainer.Panel2.ResumeLayout(false);
@@ -300,7 +300,7 @@
         #endregion
 
         private System.Windows.Forms.Button PushButton;
-        private System.Windows.Forms.SplitContainer Container;
+        private System.Windows.Forms.SplitContainer SplitContainer;
         private System.Windows.Forms.GroupBox PushGroupBox;
         private System.Windows.Forms.GroupBox PushOptionsGroupBox;
         private System.Windows.Forms.RadioButton ShelveRadioButton;

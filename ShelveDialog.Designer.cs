@@ -33,7 +33,7 @@
             this.NameLabel = new System.Windows.Forms.Label();
             this.OverwriteCheckBox = new System.Windows.Forms.CheckBox();
             this.ShelveButton = new System.Windows.Forms.Button();
-            this.CancelButton = new System.Windows.Forms.Button();
+            this.ShelveCancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NameTextBox
@@ -75,15 +75,15 @@
             this.ShelveButton.UseVisualStyleBackColor = true;
             this.ShelveButton.Click += new System.EventHandler(this.ShelveButtonClick);
             // 
-            // CancelButton
+            // ShelveCancelButton
             // 
-            this.CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CancelButton.Location = new System.Drawing.Point(106, 65);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(75, 23);
-            this.CancelButton.TabIndex = 4;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
+            this.ShelveCancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ShelveCancelButton.Location = new System.Drawing.Point(106, 65);
+            this.ShelveCancelButton.Name = "ShelveCancelButton";
+            this.ShelveCancelButton.Size = new System.Drawing.Size(75, 23);
+            this.ShelveCancelButton.TabIndex = 4;
+            this.ShelveCancelButton.Text = "Cancel";
+            this.ShelveCancelButton.UseVisualStyleBackColor = true;
             // 
             // ShelveDialog
             // 
@@ -91,7 +91,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(269, 104);
-            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.ShelveCancelButton);
             this.Controls.Add(this.ShelveButton);
             this.Controls.Add(this.OverwriteCheckBox);
             this.Controls.Add(this.NameLabel);
@@ -113,6 +113,6 @@
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.CheckBox OverwriteCheckBox;
         private System.Windows.Forms.Button ShelveButton;
-        private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.Button ShelveCancelButton;
     }
 }
