@@ -122,7 +122,11 @@ namespace GitTfs.GitExtensions.Plugin
             else if (ShelveRadioButton.Checked)
             {
                 _settings.PushSetting = PushSetting.Shelve;
-                new ShelveDialog(_commands, _settings.ShelveSettings).ShowDialog();
+                var dialogResult = new ShelveDialog(_commands, _settings.ShelveSettings).ShowDialog();
+                if (dialogResult == DialogResult.Cancel)
+                {
+                    return;
+                }
             }
             else if (RCheckinRadioButton.Checked)
             {
